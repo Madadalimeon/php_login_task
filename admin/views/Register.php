@@ -48,7 +48,6 @@
 <body>
   <div class="register-card">
     <h3 class="text-center mb-4">Register</h3>
-    <!-- ✅ Fix: Form action should point to same file -->
     <form action="home.php" method="post">
       <div class="mb-3">
         <label for="username" class="form-label">Username</label>
@@ -74,11 +73,11 @@
         <label for="phone_number" class="form-label">Phone Number</label>
         <input type="text" id="phone_number" name="phone_number" class="form-control" required>
       </div>
-
       <a href="login.php" class="register-link">Give for  login you accout </a>
-
       <button type="submit" name="submit" class="btn btn-custom w-100 mt-3">Register</button>
     </form>
   </div>
 </body>
+<script>
+</script>
 </html>

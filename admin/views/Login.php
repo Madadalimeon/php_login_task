@@ -1,8 +1,6 @@
 <?php
-session_start();
-if(isset($_SESSION['email']))
+include('login_config.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +55,7 @@ if(isset($_SESSION['email']))
 <body>
   <div class="login-card col-md-4">
     <h3 class="text-center mb-4">Login</h3>
-    <form action="home.php" method="post">
+    <form action="login.php" method="post">
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
         <input type="email" id="email" name="email" class="form-control" placeholder="Enter email" required>
@@ -66,7 +64,7 @@ if(isset($_SESSION['email']))
         <label for="password" class="form-label">Password</label>
         <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
       </div>
-      <button type="submit" class="btn btn-custom w-100">Login</button>
+      <button type="login" class="btn btn-custom w-100">Login</button>
       <a href="Register.php" class="register-link">Don’t have an account? Register</a>
     </form>
   </div>

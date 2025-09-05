@@ -4,7 +4,7 @@ include('config.php');
 // Fetch all users
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
-
+    
 // Delete record
 if (isset($_GET['delete_id'])) {
   $id = $_GET['delete_id'];
