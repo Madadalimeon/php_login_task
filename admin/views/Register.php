@@ -21,13 +21,6 @@
       width: 100%;
       max-width: 450px;
     }
-    .register-card h3 {
-      font-weight: bold;
-      color: #333;
-    }
-    .form-control {
-      border-radius: 10px;
-    }
     .btn-custom {
       background: #ff5e62;
       border: none;
@@ -39,58 +32,53 @@
     .btn-custom:hover {
       background: #ff9966;
     }
-    .login-link {
+      .register-link {
       display: block;
       text-align: center;
       margin-top: 15px;
       text-decoration: none;
-      color: #ff5e62;
+      color: #ff5e62 ;
       font-weight: 500;
     }
-    .login-link:hover {
-      color: #ff9966;
+    .register-link:hover {
+      color: #FF9966;
     }
   </style>
 </head>
 <body>
   <div class="register-card">
     <h3 class="text-center mb-4">Register</h3>
-    <form action="login.php" method="post">
-      
+    <!-- ✅ Fix: Form action should point to same file -->
+    <form action="home.php" method="post">
       <div class="mb-3">
         <label for="username" class="form-label">Username</label>
-        <input type="text" id="username" name="username" class="form-control" placeholder="Enter username" required>
+        <input type="text" id="username" name="username" class="form-control" required>
       </div>
-
       <div class="mb-3">
         <label for="first_name" class="form-label">First name</label>
-        <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Enter First name" required>
+        <input type="text" id="first_name" name="first_name" class="form-control" required>
       </div>
-
       <div class="mb-3">
         <label for="last_name" class="form-label">Last name</label>
-        <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Enter Last name" required>
+        <input type="text" id="last_name" name="last_name" class="form-control" required>
       </div>
-
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" name="email" class="form-control" placeholder="Enter email" required>
+        <input type="email" id="email" name="email" class="form-control" required>
       </div>
-
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
-        <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+        <input type="password" id="password" name="password" class="form-control" required>
       </div>
-
       <div class="mb-3">
         <label for="phone_number" class="form-label">Phone Number</label>
-        <input type="text" id="phone_number" name="phone_number" class="form-control" placeholder="Enter phone number" required>
+        <input type="text" id="phone_number" name="phone_number" class="form-control" required>
       </div>
 
-      <button type="submit" name="submit" class="btn btn-custom w-100">Register</button>
+      <a href="login.php" class="register-link">Give for  login you accout </a>
+
+      <button type="submit" name="submit" class="btn btn-custom w-100 mt-3">Register</button>
     </form>
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
